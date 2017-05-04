@@ -648,4 +648,8 @@
 
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
+
+    <!-- Defines the sysfs attribute path used by pocket bridge
+    to communicate pocket state to the pocket judge kernel driver. -->
+    <string name="config_pocketBridgeSysfsInpocket">/sys/kernel/pocket_judge/inpocket</string>
 </resources>
