@@ -23,9 +23,6 @@
 # Hall Switch
 /sys/module/hall/parameters(/.*)?               u:object_r:hall_dev:s0
 
-# Folio daemon
-/vendor/bin/folio_daemon        u:object_r:folio_daemon_exec:s0
-
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_lavender u:object_r:hal_light_default_exec:s0
 
