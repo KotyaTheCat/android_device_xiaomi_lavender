@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 
 # HW crypto
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-ioctl-qti
+    vendor.qti.hardware.cryptfshw@1.0-service-dlsym-qti
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
