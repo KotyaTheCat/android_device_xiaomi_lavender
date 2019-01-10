@@ -2,7 +2,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.job_delay=true \
 	persist.sys.mcd_config_file=/system/etc/mcd_default.conf \
 	ro.control_privapp_permissions=log \
-	drm.service.enabled=true \
+	drm.service.enabled=true
+
+#enable headset calibration
+PRODUCT_PROPERTY_OVERRIDES += \
+	audio.volume.headset.gain.depcal=true
+
+#enable dualmic fluence for voice communication
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.audio.fluence.voicecomm=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
 	qemu.hw.mainkeys=0 \
 	vendor.video.disable.ubwc=1 \
 	dalvik.vm.heapgrowthlimit=256m \
