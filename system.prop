@@ -248,3 +248,11 @@ sys.thermal.data.path=/data/vendor/thermal/
 
 #QCRIL radio power saving 
 persist.radio.add_power_save=1
+
+# USB debugging at boot
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
