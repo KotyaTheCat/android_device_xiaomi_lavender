@@ -131,7 +131,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2 \
     vendor.display.lcd_density=411 \
     debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
+    debug.stagefright.omx_default_rank=0 \
+    debug.sf.early_phase_offset_ns=1500000 \
+    debug.sf.early_app_phase_offset_ns=1500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
