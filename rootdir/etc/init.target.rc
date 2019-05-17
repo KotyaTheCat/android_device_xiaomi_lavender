@@ -44,7 +44,7 @@ on init
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    mount_all /vendor/etc/fstab.qcom
+    mount_all /vendor/etc/fstab.qcom --early
     swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
@@ -63,9 +63,32 @@ on fs
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
     chown system system /sys/class/thermal/thermal_message/temp_state
 
-on post-fs
+    # Start HW service manager early
+    start hwservicemanager
+
+    # qseecomd needs /dev/block/bootdevice
+    # vold needs keymaster that needs qseecomd
     start vendor.qseecomd
+
+on late-fs
+    # Start devices by sysfs trigger
+    start devstart_sh
+
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start hwcomposer-2-1
+    start configstore-hal-1-0
+    start gralloc-2-0
+
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.qcom --late
+
+on post-fs
     write /dev/ipa 1
+
+    # Wait qseecomd started
+    wait_for_prop vendor.sys.listeners.registered true
 
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
@@ -168,6 +191,12 @@ on property:init.svc.zygote=running
 
 on property:init.svc.zygote=stopped
     stop folio_daemon
+
+service devstart_sh /vendor/bin/init.qcom.devstart.sh
+    class core
+    user root
+    group root
+    oneshot
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service

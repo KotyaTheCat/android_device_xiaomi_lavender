@@ -44,3 +44,6 @@
 
 # USB
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.xiaomi_lavender       u:object_r:hal_usb_default_exec:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
