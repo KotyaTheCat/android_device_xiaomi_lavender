@@ -129,7 +129,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_con_rprt=1 \
     persist.radio.calls.on.ims=1 \
     debug.media.codec2=2 \
-    vendor.display.lcd_density=411
+    vendor.display.lcd_density=411 \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
