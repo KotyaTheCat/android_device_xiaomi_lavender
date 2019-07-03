@@ -56,6 +56,10 @@ vendor.audio.feature.snd_mon.enable=true
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.fluence.voicecomm=true
 
+#enable AAC frame ctl for A2DP sinks
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.bt.aac_frm_ctl.enabled=true
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	qemu.hw.mainkeys=0 \
 	vendor.video.disable.ubwc=1 \
