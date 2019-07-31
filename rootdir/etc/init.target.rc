@@ -123,7 +123,8 @@ on boot
     setprop sys.usb.configfs 1
 
 # default country code
-    setprop ro.boot.wificountrycode 00
+    setprop persist.sys.wifi.country_code "00"
+    setprop ro.boot.wificountrycode "00"
 
 #add for display feature
     chown system system /sys/class/graphics/fb0/msm_fb_ce
