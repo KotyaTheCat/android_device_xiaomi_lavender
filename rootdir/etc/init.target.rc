@@ -122,6 +122,22 @@ on boot
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
     setprop sys.usb.configfs 1
 
+# default country code
+    setprop ro.boot.wificountrycode 00
+
+#add for display feature
+    chown system system /sys/class/graphics/fb0/msm_fb_ce
+    chown system system /sys/class/graphics/fb0/msm_fb_cabc
+    chown system system /sys/class/graphics/fb0/msm_fb_srgb
+    chown system system /sys/class/graphics/fb0/msm_fb_gamma
+    chown system system /sys/class/graphics/fb0/msm_fb_cabc_movie
+    chown system system /sys/class/graphics/fb0/msm_fb_cabc_still
+    chown system system /sys/class/graphics/fb0/msm_fb_hbm
+
+# XiaomiParts
+    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
