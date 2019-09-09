@@ -60,6 +60,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.bt.aac_frm_ctl.enabled=true
 
+#Set speaker protection cal tx path sampling rate to 48k
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.audio.spkr_prot.tx.sampling_rate=48000
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	qemu.hw.mainkeys=0 \
 	vendor.video.disable.ubwc=1 \
