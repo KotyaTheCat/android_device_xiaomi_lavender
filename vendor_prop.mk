@@ -58,6 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapmaxfree=8m \
     vendor.hw.fm.init=0 \
     persist.radio.multisim.config=dsds \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.qcomsysd.enabled=1 \
     keyguard.no_require_sim=true \
     ro.com.android.dataroaming=false \
