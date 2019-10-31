@@ -92,3 +92,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Codec2 switch
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
+
+# DPI
+PRODUCT_PROPERTY_OVERRIDES += \
+	vendor.display.lcd_density=411
