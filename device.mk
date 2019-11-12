@@ -413,6 +413,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.sdm660_shim
 
+# Tetheroffload
+PRODUCT_PACKAGES += \
+    ipacm \
+    ipacm.rc \
+    IPACM_cfg.xml \
+    libipanat \
+    liboffloadhal
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims_ext_common.xml \
