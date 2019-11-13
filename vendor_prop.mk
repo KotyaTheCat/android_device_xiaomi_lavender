@@ -11,7 +11,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heaptargetutilization=0.75 \
 	dalvik.vm.heapminfree=512k \
 	dalvik.vm.heapmaxfree=8m \
-	ro.hardware.nfc_nci=nqx.default \
 	vendor.hw.fm.init=0 \
 	persist.radio.multisim.config=dsds \
 	persist.vendor.qcomsysd.enabled=1 \
