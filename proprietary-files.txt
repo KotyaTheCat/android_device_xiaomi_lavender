@@ -1211,6 +1211,8 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
 vendor/lib64/libcppf.so
+vendor/lib64/libhdcp1prov.so
+vendor/lib64/libhdcp2p2prov.so
 
 # Display postprocessing
 lib64/vendor.display.color@1.0.so
