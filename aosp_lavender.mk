@@ -27,9 +27,12 @@ PRODUCT_MODEL := Redmi Note 7
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
-    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" \
+    PRIVATE_BUILD_DESC="lavender-user 10 QP1A.191005.007 V10.3.6.0.PFGMIXM release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.9.0.PFGMIXM:user/release-keys"
+BUILD_FINGERPRINT := "google/blueline/blueline:10/QP1A.191105.003/5899767:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
