@@ -29,6 +29,9 @@
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1             u:object_r:hal_mlipay_default_exec:s0
 
+# Pocket judge
+/sys/kernel/pocket_judge/inpocket                   u:object_r:sysfs_inpocket:s0
+
 # Firmware
 /firmware                                                     u:object_r:firmware_file:s0
 /bt_firmware                                                  u:object_r:bt_firmware_file:s0
