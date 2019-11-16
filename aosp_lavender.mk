@@ -12,15 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosip_lavender
-PRODUCT_DEVICE := lavender
+PRODUCT_NAME := aosp_lavender
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 7
+PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
