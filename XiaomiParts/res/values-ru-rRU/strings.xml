@@ -22,11 +22,11 @@
     <string name="display_title">Экран</string>
 
     <!-- KCal -->
-    <string name="device_kcal_title">Калибрация цвета экрана</string>
+    <string name="device_kcal_title">Калибрация цветов экрана</string>
 
     <!-- Ambient Display -->
-    <string name="ambient_display_xiaomi">Дозе Xiaomi</string>
-    <string name="advanced_doze_summary">Ambient экран</string>
+    <string name="ambient_display_xiaomi">Индикация событий</string>
+    <string name="advanced_doze_summary">Ambient Display</string>
 
     <string name="vibration_title">Вибрация</string>
     <string name="vibration_strength_title">Сила</string>
@@ -34,15 +34,15 @@
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">Производительность</string>
     <string name="thermal_title">Настройки производительности</string>
-    <string name="thermal_summary">Выберите Ваш профил производительности</string>
-    <string name="thermal_dialogTitle">Выберите Ваш профил производительности</string>
+    <string name="thermal_summary">Выберите профиль производительности</string>
+    <string name="thermal_dialogTitle">Выберите профиль</string>
 
     <!-- Values for Thermal Presets -->
     <string name="thermal_performance">Производительность</string>
     <string name="thermal_battery">Энергосбережение</string>
     <string name="thermal_gaming">Игры</string>
-    <string name="thermal_balance">Баланс</string>
-    <string name="thermal_extreme_battery">Экстримное энергосбережение</string>
+    <string name="thermal_balance">Сбалансированный</string>
+    <string name="thermal_extreme_battery">Жёсткое энергосбережение</string>
 
     <!-- FP Actions -->
 
@@ -51,8 +51,8 @@
     <string name="audio_title">Аудио</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_title">Mi Оптимизатор звука</string>
-    <string name="dirac_summary">Oтимизирует качество звучания</string>
+    <string name="dirac_title">Улучшение звука Mi</string>
+    <string name="dirac_summary">Улучшить качество звучания</string>
     <string name="dirac_headset_title">Выберите тип наушников</string>
     <string name="dirac_preset_title">Выберите пресет</string>
 
@@ -96,7 +96,7 @@
     <!-- Audio amplification -->
 
     <!-- kcal -->
-    <string name="advanced_settings_kcal">Калибрация цвета экрана</string>
+    <string name="advanced_settings_kcal">Калибрация цветов экрана</string>
     <string name="cat_colormanagement">Настройки цвета</string>
     <string name="cat_calibration">Калибрация экрана</string>
 
