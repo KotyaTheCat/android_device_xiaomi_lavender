@@ -1171,6 +1171,13 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|758336c3d6297ab3abeba05f0fbe9a44e1fa3b5a
 vendor/lib64/libdpmqmihal.so|57e52678623c3db3070409879e415eb4dd33aa48
 
+# Dirac - from Xiaomi
+framework/audiosphere.jar|727fac8181bd3a7f8a18e14692747628a8a0c752
+etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 # DRM
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
