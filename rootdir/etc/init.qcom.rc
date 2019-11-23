@@ -677,7 +677,7 @@ service qmiproxy /system/bin/qmiproxy
 service vendor.qmuxd /system/vendor/bin/qmuxd
     class main
     user root
-    group radio audio bluetooth gps nfc diag
+    group radio audio bluetooth gps diag
     disabled
 
 service vendor.netmgrd /system/vendor/bin/netmgrd
@@ -1204,12 +1204,7 @@ service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
     user system
     group system
 
-service esepmdaemon /system/vendor/bin/esepmdaemon
-    class core
-    user system
-    group nfc
-
-on charger
+on property:init.svc.vendor.charger=running
     setprop persist.sys.usb.config mass_storage
     load_system_props
     start qcom-post-boot
