@@ -36,14 +36,19 @@
 /firmware                                                     u:object_r:firmware_file:s0
 /bt_firmware                                                  u:object_r:bt_firmware_file:s0
 
+# HW Info
+/sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
+/sys/devices/platform/HardwareInfo/gsensor  u:object_r:sysfs_info:s0
+
+# Persist
+/persist/PRSensorData\.txt                      u:object_r:sensors_persist_file:s0
+
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
+/(vendor|system/vendor)/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
 
 # Video4linux sysfs nodes
 /sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
 
 # USB
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.xiaomi_lavender       u:object_r:hal_usb_default_exec:s0
-
-# Shell scripts
-/(vendor|system/vendor)/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
