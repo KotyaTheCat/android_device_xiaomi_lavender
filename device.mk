@@ -477,6 +477,10 @@ PRODUCT_PACKAGES += \
     vndk-ext \
     vndk_package
 
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
