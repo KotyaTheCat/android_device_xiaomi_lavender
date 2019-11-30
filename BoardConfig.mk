@@ -266,6 +266,3 @@ endif
 
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
-
-# Signing parameters
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/secure/releasekey
