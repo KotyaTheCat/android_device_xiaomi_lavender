@@ -12,9 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common EvolutionX stuff.
+# Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
