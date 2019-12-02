@@ -30,9 +30,6 @@ type thermal_data_file, file_type, data_file_type;
 # Pocket judge
 type sysfs_inpocket, fs_type, sysfs_type;
 
-type hal_lineage_livedisplay_qti, domain;
-hal_server_domain(hal_lineage_livedisplay_qti, hal_lineage_livedisplay)
-
 # Sensors
 type sensors_data_file, file_type, data_file_type;
 
