@@ -1,0 +1,1 @@
+allow wcnss_service vendor_data_file:file { getattr } ;
