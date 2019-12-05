@@ -1,2 +1,5 @@
 #============= netmgrd ==============
 allow netmgrd property_socket:sock_file write;
+allow netmgrd default_prop:file { getattr } ;
+allow netmgrd default_prop:file { open } ;
+allow netmgrd default_prop:file { read } ;

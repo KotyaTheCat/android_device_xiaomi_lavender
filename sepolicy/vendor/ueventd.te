@@ -4,3 +4,6 @@ allow ueventd kcal_dev:lnk_file r_file_perms;
 allow ueventd hall_dev:dir r_dir_perms;
 allow ueventd hall_dev:file rw_file_perms;
 allow ueventd hall_dev:lnk_file r_file_perms;
+allow ueventd unlabeled:file { getattr } ;
+allow ueventd unlabeled:file { open } ;
+allow ueventd unlabeled:file { read } ;

@@ -1,0 +1,4 @@
+allow dpmd vendor_file:file { execute } ;
+allow dpmd vendor_file:file { getattr } ;
+allow dpmd vendor_file:file { open } ;
+allow dpmd vendor_file:file { read } ;

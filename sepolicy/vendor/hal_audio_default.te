@@ -1,3 +1,12 @@
 allow hal_audio_default sysfs_info:file { open getattr read };
 get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
+allow hal_audio_default audio_prop:file { getattr } ;
+allow hal_audio_default audio_prop:file { open } ;
+allow hal_audio_default audio_prop:file { read } ;
+allow hal_audio_default default_prop:file { getattr } ;
+allow hal_audio_default default_prop:file { open } ;
+allow hal_audio_default default_prop:file { read } ;
+allow hal_audio_default sysfs:dir { open } ;
+allow hal_audio_default sysfs:dir { read } ;
+allow hal_audio_default init:binder { call } ;

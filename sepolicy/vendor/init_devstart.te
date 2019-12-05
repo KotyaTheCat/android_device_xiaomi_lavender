@@ -10,5 +10,6 @@ allow init-qcom-devstart-sh sysfs_slpi:dir { search } ;
 allow init-qcom-devstart-sh sysfs_slpi:file { open } ;
 allow init-qcom-devstart-sh sysfs_slpi:file { write } ;
 allow init-qcom-devstart-sh vendor_toolbox_exec:file { execute_no_trans } ;
+allow init-qcom-devstart-sh vendor_default_prop:property_service { set } ;
 
 init_daemon_domain(init-qcom-devstart-sh)

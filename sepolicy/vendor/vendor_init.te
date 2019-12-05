@@ -20,6 +20,16 @@ allow vendor_init vendor_ssr_prop:property_service set;
 allow vendor_init audio_prop:property_service set;
 allow vendor_init vendor_fp_prop:property_service set;
 
+allow vendor_init default_prop:file { read } ;
+allow vendor_init default_prop:property_service { set } ;
+allow vendor_init exported_fingerprint_prop:property_service { set } ;
+allow vendor_init firstboot_prop:file { read } ;
+allow vendor_init fm_prop:property_service { set } ;
+allow vendor_init freq_prop:property_service { set } ;
+allow vendor_init persist_debug_prop:file { read } ;
+allow vendor_init radio_prop:property_service { set } ;
+allow vendor_init thermal_engine_prop:file { read } ;
+
 allow vendor_init block_device:lnk_file { setattr } ;
 
 allow vendor_init rootfs:dir { add_name write };

@@ -2,3 +2,7 @@ allow hal_sensors_default sysfs:file { read open };
 allow hal_sensors_default sysfs_info:file { read write };
 allow hal_sensors_default vndbinder_device:chr_file ioctl;
 allow hal_sensors_default vndservicemanager:binder {call transfer };
+allow hal_sensors_default unlabeled:dir { getattr } ;
+allow hal_sensors_default unlabeled:file { open } ;
+allow hal_sensors_default unlabeled:file { read } ;
+allow hal_sensors_default unlabeled:dir { search } ;

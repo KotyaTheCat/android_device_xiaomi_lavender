@@ -1,0 +1,5 @@
+allow misc_writer proc_cmdline:file { getattr } ;
+allow misc_writer proc_cmdline:file { open } ;
+allow misc_writer unlabeled:file { getattr } ;
+allow misc_writer unlabeled:file { open } ;
+allow misc_writer unlabeled:file { read } ;

@@ -1,0 +1,5 @@
+allow qrtr qrtr:capability { net_admin } ;
+allow qrtr qrtr:netlink_route_socket { create } ;
+allow qrtr qrtr:netlink_route_socket { nlmsg_write } ;
+allow qrtr qrtr:netlink_route_socket { read } ;
+allow qrtr qrtr:netlink_route_socket { write } ;
