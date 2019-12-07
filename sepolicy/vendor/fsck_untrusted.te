@@ -1,0 +1,1 @@
+allow fsck_untrusted userdata_block_device:blk_file { read } ;

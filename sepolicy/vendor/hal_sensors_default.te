@@ -6,3 +6,4 @@ allow hal_sensors_default unlabeled:dir { getattr } ;
 allow hal_sensors_default unlabeled:file { open } ;
 allow hal_sensors_default unlabeled:file { read } ;
 allow hal_sensors_default unlabeled:dir { search } ;
+allow hal_sensors_default device:chr_file { read } ;
