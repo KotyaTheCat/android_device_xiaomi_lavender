@@ -1,2 +1,10 @@
-allow untrusted_app camera_prop:file { read } ;
 allow untrusted_app proc:file { read } ;
+allow untrusted_app camera_prop:file { getattr } ;
+allow untrusted_app camera_prop:file { open } ;
+allow untrusted_app camera_prop:file { read } ;
+allow untrusted_app persist_camera_prop:file { open } ;
+allow untrusted_app persist_camera_prop:file { read } ;
+allow untrusted_app persist_camera_prop:file { getattr } ;
+allow untrusted_app vendor_default_prop:file { read } ;
+allow untrusted_app vendor_default_prop:file { open } ;
+allow untrusted_app vendor_default_prop:file { getattr } ;
