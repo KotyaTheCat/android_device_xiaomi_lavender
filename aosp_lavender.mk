@@ -16,6 +16,11 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 
+# Maintainer prop
+EVO_DONATE_URL := https://t.me/KotyaTheCat
+EVO_MAINTAINER := KotyaTheCat
+EVO_SUPPORT_URL := https://t.me/KotyaTheCat
+
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
